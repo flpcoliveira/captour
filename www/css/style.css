@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.card .item.item-text-wrap.ng-hide {
+  line-height: 0px;
+}
+.card .item-text-wrap {
+    text-align: justify;
+}
+.card .item.item-text-wrap.ng-hide-add,
+.card .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
