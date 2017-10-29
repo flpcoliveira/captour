@@ -6,6 +6,8 @@ angular.module('app.controllers', [])
 function ($scope, $stateParams) {
     $scope.groups = [];
     $scope.groups.push({
+        id: 1,
+        concluido: false,
         resumo: 'Visita ao Convento da Penha',
         descricao: 'O Convento da Penha é um dos santuários religiosos mais antigos do Brasil, localizado no município de Vila Velha, estado do Espírito Santo. Está situado no alto de um penhasco, a 154 metros de altitude, sendo uma das igrejas mais antigas do estado, cujas obras avançavam aos poucos e tiveram início por volta de 1558, a mando de frei Pedro Palácios.',
         atividades: [
@@ -20,6 +22,8 @@ function ($scope, $stateParams) {
         pontuacao: 600
     });
     $scope.groups.push({
+        id: 2,
+        concluido: true,
         resumo: 'Trilha no Mestre Álvaro',
         descricao: 'O Mestre Álvaro é considerado uma das maiores elevações litorâneas (planalto) da costa brasileira[carece de fontes] e abriga uma das últimas áreas de Mata Atlântica de altitude do Espírito Santo. É um maciço costeiro que possui formato semicircular em planta, estruturado em um corpo de rocha intrusiva[1] (plutônica) granítica  com cerca de 833 metros de altitude no Estado do Espírito Santo.',
         atividades: [
@@ -28,11 +32,13 @@ function ($scope, $stateParams) {
         ],
         show: false,
         iconeEsquerda: 'ion-ios-sunny',
-        iconeDireita: 'ion-android-star-half',
+        iconeDireita: 'ion-checkmark',
         imagem: 'mestre-alvaro.jpg'
         ,pontuacao: 500
     });
     $scope.groups.push({
+        id: 3,
+        concluido: false,
         resumo: 'Festa do Morango de D. Martins',
         descricao: 'A maior festa de morango do universo',
         atividades: [
