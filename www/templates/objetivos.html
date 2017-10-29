@@ -1,0 +1,27 @@
+<ion-view title="Objetivos" id="page2">
+  <ion-content padding="true" class="has-header">
+    <!-- Novo Objetivos -->
+    <div class="card" ng-repeat="group in groups" ng-click="toggleGroup(group)">
+      <div class="item item-divider item-icon-left item-icon-right">
+          <i class="icon {{group.iconeEsquerda}}"></i>{{group.resumo}}
+          <span class="item-note">{{group.pontuacao}}</span>
+          <i class="icon {{group.iconeDireita}}"></i>
+      </div>
+      <div class="item item-text-wrap" ng-show="isGroupShown(group)" style="text-align: justify;">
+        <img src="img/{{group.imagem}}" width="100%" /> {{group.descricao}}
+        <h2 style="padding-top: 20px; padding-bottom: 20px; font-size: 25px">Principais Atividades</h2>
+        <ul style=" padding-left: 15px;">
+          <li style="list-style-type: circle;" ng-repeat="atividade in group.atividades">
+            {{atividade}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="spacer" style="width: 300px; height: 162px;"></div>
+    <div id="objetivos-button-bar3" class="button-bar">
+      <button id="objetivos-button8" class="button button-positive button-block icon ion-android-camera"></button>
+      <button id="objetivos-button9" class="button button-positive button-block icon ion-android-pin"></button>
+      <button id="objetivos-button10" class="button button-positive button-block icon ion-android-share-alt"></button>
+    </div>
+  </ion-content>
+</ion-view>
