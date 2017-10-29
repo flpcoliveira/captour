@@ -10,7 +10,7 @@ angular.module('app.routes', [])
     
 
       .state('tabsController.objetivos', {
-    url: '/page2',
+    url: '/objetivos',
     views: {
       'tab2': {
         templateUrl: 'templates/objetivos.html',
@@ -20,7 +20,7 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController.perfil', {
-    url: '/page3',
+    url: '/perfil',
     views: {
       'tab1': {
         templateUrl: 'templates/perfil.html',
@@ -30,7 +30,7 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController.feed', {
-    url: '/page4',
+    url: '/feed',
     views: {
       'tab4': {
         templateUrl: 'templates/feed.html',
@@ -40,19 +40,19 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController', {
-    url: '/page1',
+    url: '/tabs',
     templateUrl: 'templates/tabsController.html',
     abstract:true
   })
 
   .state('mapsExample', {
-    url: '/page5',
+    url: '/mapsExemplo',
     templateUrl: 'templates/mapsExample.html',
     controller: 'mapsExampleCtrl'
   })
 
   .state('tabsController.ranking', {
-    url: '/page6',
+    url: '/ranking',
     views: {
       'tab3': {
         templateUrl: 'templates/ranking.html',
@@ -62,13 +62,13 @@ angular.module('app.routes', [])
   })
 
   .state('login', {
-    url: '/page8',
+    url: '/login',
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
 
   .state('tabsController.capCoin', {
-    url: '/page9',
+    url: '/capCoin',
     views: {
       'tab1': {
         templateUrl: 'templates/capCoin.html',
@@ -78,7 +78,7 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController.capShop', {
-    url: '/page10',
+    url: '/capShop',
     views: {
       'tab1': {
         templateUrl: 'templates/capShop.html',
@@ -87,7 +87,7 @@ angular.module('app.routes', [])
     }
   })
 
-$urlRouterProvider.otherwise('/page8')
+$urlRouterProvider.otherwise('/login')
 
 
 });

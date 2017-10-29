@@ -1,1 +1,24 @@
 /* Empty. Add your own CSS if you like */
+.icon.ion-checkmark{
+    color: lightgreen;
+}
+
+.icon.ion-android-star-half,
+.icon.ion-android-star{
+    color: #ffd700;
+}
+span.item-note{
+    color: #000;
+}
+.tabs-striped.tabs-stable .tab-item.tab-item-active,
+.tab-item.tab-item-active{
+    border-color: #387ef5;
+    color: #387ef5;
+}
+.card .item.item-divider {
+    background-color: rgba(240, 155, 190, .1);
+}
+
+.button-bar .concluido{
+    background-color: lightgreen;
+}

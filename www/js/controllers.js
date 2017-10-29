@@ -6,6 +6,8 @@ angular.module('app.controllers', [])
 function ($scope, $stateParams) {
     $scope.groups = [];
     $scope.groups.push({
+        id: 1,
+        concluido: false,
         resumo: 'Visita ao Convento da Penha',
         descricao: 'O Convento da Penha é um dos santuários religiosos mais antigos do Brasil, localizado no município de Vila Velha, estado do Espírito Santo. Está situado no alto de um penhasco, a 154 metros de altitude, sendo uma das igrejas mais antigas do estado, cujas obras avançavam aos poucos e tiveram início por volta de 1558, a mando de frei Pedro Palácios.',
         atividades: [
@@ -21,6 +23,8 @@ function ($scope, $stateParams) {
         url: 'https://www.google.com.br/maps/place/Convento+da+Penha/@-20.3292412,-40.2889956,17z/data=!3m1!4b1!4m5!3m4!1s0xb816498a913f37:0xa2c5411362c10f93!8m2!3d-20.3292412!4d-40.2868069'
     });
     $scope.groups.push({
+        id: 2,
+        concluido: true,
         resumo: 'Trilha no Mestre Álvaro',
         descricao: 'O Mestre Álvaro é considerado uma das maiores elevações litorâneas (planalto) da costa brasileira[carece de fontes] e abriga uma das últimas áreas de Mata Atlântica de altitude do Espírito Santo. É um maciço costeiro que possui formato semicircular em planta, estruturado em um corpo de rocha intrusiva[1] (plutônica) granítica  com cerca de 833 metros de altitude no Estado do Espírito Santo.',
         atividades: [
@@ -29,12 +33,14 @@ function ($scope, $stateParams) {
         ],
         show: false,
         iconeEsquerda: 'ion-ios-sunny',
-        iconeDireita: 'ion-android-star-half',
+        iconeDireita: 'ion-checkmark',
         imagem: 'mestre-alvaro.jpg'
         ,pontuacao: 500,
         url: 'https://www.google.com.br/maps/place/Mestre+%C3%81lvaro/@-20.1653547,-40.3088653,13.75z/data=!4m5!3m4!1s0xb821d74d96b705:0xcc1cb86d3891dc87!8m2!3d-20.1693115!4d-40.3137524'
     });
     $scope.groups.push({
+        id: 3,
+        concluido: false,
         resumo: 'Festa do Morango de D. Martins',
         descricao: 'A maior festa de morango do universo',
         atividades: [
