@@ -3,9 +3,9 @@
     <!-- Novo Objetivos -->
     <div class="card" ng-repeat="group in groups" ng-click="toggleGroup(group)">
       <div class="item item-divider item-icon-left item-icon-right">
-          <i class="icon {{group.iconeEsquerda}}"></i>{{group.resumo}}
-          <span class="item-note">{{group.pontuacao}}</span>
-          <i class="icon {{group.iconeDireita}}"></i>
+        <i class="icon {{group.iconeEsquerda}}"></i>{{group.resumo}}
+        <span class="item-note">{{group.pontuacao}}</span>
+        <i class="icon {{group.iconeDireita}}"></i>
       </div>
       <div class="item item-text-wrap" ng-show="isGroupShown(group)" style="text-align: justify;">
         <img src="img/{{group.imagem}}" width="100%" /> {{group.descricao}}
@@ -14,12 +14,12 @@
           <li style="list-style-type: circle;" ng-repeat="atividade in group.atividades">
             {{atividade}}
           </li>
-          
-          <a href="{{group.url}}">Localização</a>
         </ul>
         <div class="spacer" style="width: 300px; height: 30px;"></div>
         <div id="objetivos-button-bar3" class="button-bar">
-          <button id="objetivos-button-camera-{{group.id}}" ng-if="!group.concluido" class="button button-positive button-block icon ion-android-camera" ng-class="'concluido': group.concluido"></button>
+          <a class="button button-positive button-block icon ion-map" href="{{group.url}}"></a>
+          <button id="objetivos-button-camera-{{group.id}}" ng-if="!group.concluido" class="button button-positive button-block icon ion-android-camera"
+            ng-class="{'concluido': group.concluido}"></button>
           <button ng-if="!group.concluido" id="objetivos-button-checkin-{{group.id}}" class="button button-positive button-block icon ion-android-pin"></button>
           <button id="objetivos-button-share-{{group.id}}" ng-if="group.concluido" class="button button-positive button-block icon ion-android-share-alt"></button>
         </div>
