@@ -17,7 +17,8 @@ function ($scope, $stateParams) {
         iconeEsquerda: 'ion-trophy',
         iconeDireita: 'ion-android-star',
         imagem: 'convento-penha.jpg',
-        pontuacao: 600
+        pontuacao: 600,
+        url: 'https://www.google.com.br/maps/place/Convento+da+Penha/@-20.3292412,-40.2889956,17z/data=!3m1!4b1!4m5!3m4!1s0xb816498a913f37:0xa2c5411362c10f93!8m2!3d-20.3292412!4d-40.2868069'
     });
     $scope.groups.push({
         resumo: 'Trilha no Mestre Álvaro',
@@ -30,7 +31,8 @@ function ($scope, $stateParams) {
         iconeEsquerda: 'ion-ios-sunny',
         iconeDireita: 'ion-android-star-half',
         imagem: 'mestre-alvaro.jpg'
-        ,pontuacao: 500
+        ,pontuacao: 500,
+        url: 'https://www.google.com.br/maps/place/Mestre+%C3%81lvaro/@-20.1653547,-40.3088653,13.75z/data=!4m5!3m4!1s0xb821d74d96b705:0xcc1cb86d3891dc87!8m2!3d-20.1693115!4d-40.3137524'
     });
     $scope.groups.push({
         resumo: 'Festa do Morango de D. Martins',
@@ -44,7 +46,8 @@ function ($scope, $stateParams) {
         iconeEsquerda: 'ion-ios-snowy',
         iconeDireita: 'ion-android-star-half',
         imagem: 'festa-morango.png',
-        pontuacao: 300
+        pontuacao: 300,
+        url: 'https://www.google.com.br/maps/place/Centro+de+Eventos+Morang%C3%A3o/@-20.4046112,-41.0267776,13z/data=!4m8!1m2!2m1!1sCentro+de+Eventos+Morang%C3%A3o,+Pedra+Azul,+Domingos+Martins!3m4!1s0xb9975ad3d7268f:0xef346c5d52e68e45!8m2!3d-20.3808855!4d-41.0271763'
     });
 
     /*
